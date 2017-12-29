@@ -1,53 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/transparent"
-    android:orientation="vertical">
+                xmlns:timeBar="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
 
     <TextView
         android:id="@id/exo_controls_title"
         style="@style/ExoMediaTitle"
-        tools:text="测试阿斯顿" />
+        tools:text="测试阿斯顿"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@id/exo_controller_bottom"
-        style="@style/ExoMediaControllerBottom">
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7F000000">
 
-        <ImageButton
-            android:id="@id/exo_play"
-            style="@style/ExoMediaButton.Play" />
+        <FrameLayout
+            android:id="@+id/fl_start_pause_container"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
 
-        <ImageButton
-            android:id="@+id/exo_pause"
-            style="@style/ExoMediaButton.Pause" />
+            <ImageButton
+                android:id="@id/exo_play"
+                style="@style/ExoMediaButton.Play"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"/>
 
-        <chuangyuan.ycj.videolibrary.widget.ExoDefaultTimeBar
-            android:id="@id/exo_progress"
-            style="@style/ExoMediaTimeBar" />
-
-        <TextView
-            android:id="@id/exo_position"
-            style="@style/ExoMediaCurrPosition"
-            tools:text="12:12" />
-
-        <TextView
-            style="@style/ExoMediaSpan"
-            android:text="@string/exo_fenge" />
-
-        <TextView
-            android:id="@+id/exo_duration"
-            style="@style/ExoMediaDuration"
-            tools:text="30:12" />
-
-        <TextView
-            style="@style/ExoMediaTextSwitch"
-            tools:text=" 超清" />
+            <ImageButton
+                android:id="@+id/exo_pause"
+                style="@style/ExoMediaButton.Pause"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"/>
+        </FrameLayout>
 
         <android.support.v7.widget.AppCompatCheckBox
             android:id="@id/exo_video_fullscreen"
-            style="@style/ExoMediaButton.Fullscreen" />
-    </LinearLayout>
+            style="@style/ExoMediaButton.Fullscreen"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <TextView
+            android:id="@id/exo_video_switch"
+            style="@style/ExoMediaTextSwitch"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/exo_video_fullscreen"
+            tools:text=" 超清"/>
+
+        <chuangyuan.ycj.videolibrary.widget.ExoDefaultTimeBar
+            android:id="@id/exo_progress"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/exo_video_switch"
+            android:layout_toRightOf="@id/fl_start_pause_container"
+            timeBar:bar_height="2dp"
+            timeBar:buffered_color="#FFFFFF"
+            timeBar:played_color="#F96096"
+            timeBar:scrubber_color="#F96096"
+            timeBar:scrubber_disabled_size="12dp"
+            timeBar:scrubber_dragged_size="12dp"
+            timeBar:scrubber_enabled_size="12dp"
+            timeBar:unplayed_color="#989898"
+            />
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/exo_progress"
+            android:layout_below="@id/exo_progress"
+            android:layout_marginLeft="6dp"
+            android:includeFontPadding="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            tools:text="00:01"/>
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/exo_progress"
+            android:layout_below="@id/exo_progress"
+            android:layout_marginRight="6dp"
+            android:includeFontPadding="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            tools:text="10:00"/>
+    </RelativeLayout>
 
 </RelativeLayout>

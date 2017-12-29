@@ -9,10 +9,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.exoplayer2.ExoPlaybackException;
-import java.util.Arrays;
+
 import chuangyuan.ycj.videolibrary.listener.VideoInfoListener;
-import chuangyuan.ycj.videolibrary.listener.VideoWindowListener;
-import chuangyuan.ycj.videolibrary.video.ExoUserPlayer;
 import chuangyuan.ycj.videolibrary.video.GestureVideoPlayer;
 import chuangyuan.ycj.videolibrary.widget.VideoPlayerView;
 import chuangyuan.ycj.yjplay.R;
@@ -22,7 +20,7 @@ public class MainDetailedActivity extends Activity {
     private GestureVideoPlayer exoPlayerManager;
     private VideoPlayerView videoPlayerView;
     private static final String TAG = "OfficeDetailedActivity";
-    String[] test;
+//    String[] test;
 
     @Override
 
@@ -32,25 +30,25 @@ public class MainDetailedActivity extends Activity {
         videoPlayerView = (VideoPlayerView) findViewById(R.id.exo_play_context_id);
         exoPlayerManager = new GestureVideoPlayer(this, videoPlayerView, new DataSource(this));
         //设置视频标题
-        exoPlayerManager.setTitle("视频标题");
+//        exoPlayerManager.setTitle("视频标题");
         //设置水印图
-        exoPlayerManager.setExoPlayWatermarkImg(R.mipmap.watermark_big);
-        exoPlayerManager.setOnWindowListener(new VideoWindowListener() {
-            @Override
-            public void onCurrentIndex(int currentIndex, int windowCount) {
-                Toast.makeText(getApplication(), currentIndex + "windowCount:" + windowCount, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        exoPlayerManager.setExoPlayWatermarkImg(R.mipmap.watermark_big);
+//        exoPlayerManager.setOnWindowListener(new VideoWindowListener() {
+//            @Override
+//            public void onCurrentIndex(int currentIndex, int windowCount) {
+//                Toast.makeText(getApplication(), currentIndex + "windowCount:" + windowCount, Toast.LENGTH_SHORT).show();
+//            }
+//        });
         //设置开始播放进度
         // exoPlayerManager.setPosition(1000);
-        // exoPlayerManager.setPlayUri(getString(R.string.uri_test_3),getString(R.string.uri_test_h));
+         exoPlayerManager.setPlayUri(getString(R.string.uri_test_3));
         // exoPlayerManager.setPlayUri(Environment.getExternalStorageDirectory().getAbsolutePath()+"/VID_20170925_154925.mp4");
-        test = new String[]{getString(R.string.uri_test_9), getString(R.string.uri_test_7), getString(R.string.uri_test_8)};
-        String[] name = {"超清", "高清", "标清"};
+//        test = new String[]{getString(R.string.uri_test_9), getString(R.string.uri_test_7), getString(R.string.uri_test_8)};
+//        String[] name = {"超清", "高清", "标清"};
         //开启线路设置
-        exoPlayerManager.setShowVideoSwitch(true);
+//        exoPlayerManager.setShowVideoSwitch(true);
         // exoPlayerManager.setPlaySwitchUri(0,test,name);
-        exoPlayerManager.setPlaySwitchUri(0, 0, getString(R.string.uri_test_11), Arrays.asList(test), Arrays.asList(name));
+//        exoPlayerManager.setPlaySwitchUri(0, 0, getString(R.string.uri_test_11), Arrays.asList(test), Arrays.asList(name));
         //exoPlayerManager.setPlayUri(Environment.getExternalStorageDirectory().getAbsolutePath()+"/test.mp4");
         //开始启动播放视频
         //exoPlayerManager.startPlayer();
@@ -78,7 +76,7 @@ public class MainDetailedActivity extends Activity {
         //隐藏进度条
         // exoPlayerManager.hideSeekBar();
         //显示进度条
-        //exoPlayerManager.showSeekBar();
+        exoPlayerManager.showSeekBar();
         //是否播放
         // exoPlayerManager.isPlaying();
         //设置播放视频倍数  快进播放和慢放播放
@@ -142,7 +140,7 @@ public class MainDetailedActivity extends Activity {
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
-      //  exoPlayerManager.onConfigurationChanged(newConfig);//横竖屏切换
+        exoPlayerManager.onConfigurationChanged(newConfig);//横竖屏切换
         super.onConfigurationChanged(newConfig);
     }
 

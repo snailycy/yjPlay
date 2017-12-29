@@ -20,6 +20,7 @@
             android:name=".defaults.MainDetailedActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTop"
+            android:screenOrientation="user"
             android:theme="@style/AppTheme"/>
         <activity
             android:name=".MainListActivity"

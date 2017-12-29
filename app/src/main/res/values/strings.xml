@@ -18,7 +18,25 @@
     <string name="uri_test_image">http://i3.letvimg.com/lc08_yunzhuanma/201707/29/20/49/3280a525bef381311b374579f360e80a_v2_MTMxODYyNjMw/thumb/2_960_540.jpg</string>
     <string name="new_message_notification_title_template">New message: %1$s</string>
     <string name="ad_tag_url"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=]]></string>
-
+    <string name="exo_play_wifi_hint_no">Your current network is not wifi, do you continue to watch video</string>
+    <string name="exo_play_reminder">hint</string>
+    <string name="Detailed_play">Detailed play</string>
+    <string name="The_list_of_play">The list of play</string>
+    <string name="Custom_layout">Custom layout</string>
+    <string name="Customize_the_start_button_event">Customize the start button event</string>
+    <string name="_15m">Continue playing (15 m)</string>
+    <string name="error_hint">there was an error</string>
+    <string name="im_btn_hint">advertisement video</string>
+    <string name="googlesdk">googleSDK advertisement video</string>
+    <string name="custom_media">Customize media data</string>
+    <string name="aes_hint_btn">AES encryption video</string>
+    <string name="cache_bideo_btn">Offline cache playback</string>
+    <string name="simple_video_btn">Simple encryption video</string>
+    <string name="play_video">play video</string>
+    <string name="down_hint">Download and encrypt video</string>
+    <string name="Skip_the_advertising">Skip the advertising</string>
+    <string name="default_cache">Default cache playback</string>
+    <string name="custom_cache">Customize the download cache</string>
 
 
 </resources>

@@ -30,6 +30,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -334,7 +335,7 @@ public class PlaybackControlView extends FrameLayout {
                 repeatToggleModes = getRepeatToggleModes(a, repeatToggleModes);
                 showShuffleButton = a.getBoolean(R.styleable.PlaybackControlView_show_shuffle_button,
                         showShuffleButton);
-           icFullscreenSelector = a.getResourceId(R.styleable.PlaybackControlView_player_fullscreen_image_selector, icFullscreenSelector);
+                icFullscreenSelector = a.getResourceId(R.styleable.PlaybackControlView_player_fullscreen_image_selector, icFullscreenSelector);
             } finally {
                 a.recycle();
             }
@@ -393,9 +394,15 @@ public class PlaybackControlView extends FrameLayout {
         }
         /*我控件布局*/
         exoFullscreen = (AppCompatCheckBox) findViewById(R.id.exo_video_fullscreen);
-       videoSwitchText = (TextView) findViewById(R.id.exo_video_switch);
+        videoSwitchText = (TextView) findViewById(R.id.exo_video_switch);
         controlsTitleText = (TextView) findViewById(R.id.exo_controls_title);
         exoControllerBottom = findViewById(R.id.exo_controller_bottom);
+        exoControllerBottom.setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
         if (exoFullscreen != null) {
             exoFullscreen.setButtonDrawable(icFullscreenSelector);
         }
@@ -829,10 +836,10 @@ public class PlaybackControlView extends FrameLayout {
                 timeBar.setAdGroupTimesMs(adGroupTimesMs, playedAdGroups, totalAdGroupCount);
             }
         }
-        if (updateProgressListener!=null){
-            updateProgressListener.updateProgress(position,bufferedPosition,duration);
+        if (updateProgressListener != null) {
+            updateProgressListener.updateProgress(position, bufferedPosition, duration);
         }
-        if (!isVisible() ){
+        if (!isVisible()) {
             return;
         }
         if (durationView != null) {
@@ -1087,18 +1094,19 @@ public class PlaybackControlView extends FrameLayout {
 
     /******自己定义方法hide*******/
     private final AppCompatCheckBox exoFullscreen;
-    private final TextView   videoSwitchText;
+    private final TextView videoSwitchText;
     private final TextView controlsTitleText;
     private final View exoControllerBottom;
     private AnimUtils.AnimatorListener animatorListener;
     private AnimUtils.UpdateProgressListener updateProgressListener;
+
     /**
      * 设置全屏按钮样式
      *
      * @param icFullscreenStyle 全屏按钮样式
      **/
     public void setFullscreenStyle(@DrawableRes int icFullscreenStyle) {
-        this.icFullscreenSelector=icFullscreenStyle;
+        this.icFullscreenSelector = icFullscreenStyle;
         if (getExoFullscreen() != null) {
             getExoFullscreen().setButtonDrawable(icFullscreenStyle);
         }
@@ -1107,6 +1115,7 @@ public class PlaybackControlView extends FrameLayout {
     public int getIcFullscreenSelector() {
         return icFullscreenSelector;
     }
+
     /**
      * 设置标题
      *
@@ -1144,15 +1153,19 @@ public class PlaybackControlView extends FrameLayout {
     public View getPlayButton() {
         return playButton;
     }
+
     public AppCompatCheckBox getExoFullscreen() {
         return exoFullscreen;
     }
+
     public TextView getSwitchText() {
         return videoSwitchText;
     }
+
     public TextView getTitleText() {
         return controlsTitleText;
     }
+
     public TimeBar getTimeBar() {
         return timeBar;
     }
@@ -1218,6 +1231,7 @@ public class PlaybackControlView extends FrameLayout {
     public void setAnimatorListener(AnimUtils.AnimatorListener animatorListener) {
         this.animatorListener = animatorListener;
     }
+
     /***
      * 设置进度回调
      * @param updateProgressListener updateProgressListener
