@@ -9,11 +9,11 @@
         priority="4"
         summary="Obsolete Gradle Dependency"
         explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
-        errorLine1="    compile &apos;com.android.support:appcompat-v7:25.3.1&apos;"
+        errorLine1="    compile &apos;com.android.support:appcompat-v7:25.3.1&apos;"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\build.gradle"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/build.gradle"
             line="29"
             column="5"/>
     </issue>
@@ -26,10 +26,10 @@
         priority="8"
         summary="Incomplete translation"
         explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.&#xA;&#xA;If the string should **not** be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.&#xA;&#xA;By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.&#xA;&#xA;You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
-        errorLine1="    &lt;string name=&quot;exo_fenge&quot;>/&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_fenge&quot;>/&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="40"
             column="13"/>
     </issue>
@@ -42,10 +42,10 @@
         priority="3"
         summary="Overdraw: Painting regions more than once"
         explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
-        errorLine1="    android:background=&quot;@android:color/black&quot;>"
+        errorLine1="    android:background=&quot;@android:color/black&quot;>"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\simple_exo_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_view.xml"
             line="5"
             column="5"/>
     </issue>
@@ -58,11 +58,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\btn_continue_drawable.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/btn_continue_drawable.xml"
             line="2"
             column="1"/>
     </issue>
@@ -75,11 +75,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="  &lt;color name=&quot;simple_exo_style_Accent&quot;>#FF4081&lt;/color>"
+        errorLine1="  &lt;color name=&quot;simple_exo_style_Accent&quot;>#FF4081&lt;/color>"
         errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\constants.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/constants.xml"
             line="5"
             column="10"/>
     </issue>
@@ -92,11 +92,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="  &lt;color name=&quot;simple_exo_style_color&quot;>#005fff&lt;/color>"
+        errorLine1="  &lt;color name=&quot;simple_exo_style_color&quot;>#005fff&lt;/color>"
         errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\constants.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/constants.xml"
             line="6"
             column="10"/>
     </issue>
@@ -109,11 +109,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="  &lt;color name=&quot;simple_exo_color_33&quot;>#33000000&lt;/color>"
+        errorLine1="  &lt;color name=&quot;simple_exo_color_33&quot;>#33000000&lt;/color>"
         errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\constants.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/constants.xml"
             line="7"
             column="10"/>
     </issue>
@@ -126,11 +126,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="  &lt;color name=&quot;primary_dark&quot;>#3d3b3b&lt;/color>"
+        errorLine1="  &lt;color name=&quot;primary_dark&quot;>#3d3b3b&lt;/color>"
         errorLine2="         ~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\constants.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/constants.xml"
             line="8"
             column="10"/>
     </issue>
@@ -143,11 +143,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;dimen name=&quot;dp30&quot;>35dp&lt;/dimen>"
+        errorLine1="    &lt;dimen name=&quot;dp30&quot;>35dp&lt;/dimen>"
         errorLine2="           ~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\dimen.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/dimen.xml"
             line="3"
             column="12"/>
     </issue>
@@ -160,11 +160,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;dimen name=&quot;exo_media_button_width_2&quot;>60dp&lt;/dimen>"
+        errorLine1="    &lt;dimen name=&quot;exo_media_button_width_2&quot;>60dp&lt;/dimen>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\dimen.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/dimen.xml"
             line="7"
             column="12"/>
     </issue>
@@ -177,13 +177,26 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;dimen name=&quot;exo_media_button_height_2&quot;>50dp&lt;/dimen>"
+        errorLine1="    &lt;dimen name=&quot;exo_media_button_height_2&quot;>50dp&lt;/dimen>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\dimen.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/dimen.xml"
             line="8"
             column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.exo_bg_video_bottom` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/exo_bg_video_bottom.9.png"/>
     </issue>
 
     <issue
@@ -194,19 +207,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-anydpi-v21\exo_controls_fastforward.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_fastforward.xml"
             line="15"
             column="1"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-hdpi\exo_controls_fastforward.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi/exo_controls_fastforward.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xhdpi\exo_controls_fastforward.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xhdpi/exo_controls_fastforward.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xxhdpi\exo_controls_fastforward.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi/exo_controls_fastforward.png"/>
     </issue>
 
     <issue
@@ -217,19 +230,53 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-anydpi-v21\exo_controls_next.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_next.xml"
             line="15"
             column="1"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-hdpi\exo_controls_next.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi/exo_controls_next.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xhdpi\exo_controls_next.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xhdpi/exo_controls_next.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xxhdpi\exo_controls_next.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi/exo_controls_next.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.exo_controls_pause` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_pause.xml"
+            line="15"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.exo_controls_play` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_play.xml"
+            line="15"
+            column="1"/>
     </issue>
 
     <issue
@@ -240,19 +287,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-anydpi-v21\exo_controls_previous.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_previous.xml"
             line="15"
             column="1"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-hdpi\exo_controls_previous.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi/exo_controls_previous.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xhdpi\exo_controls_previous.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xhdpi/exo_controls_previous.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xxhdpi\exo_controls_previous.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi/exo_controls_previous.png"/>
     </issue>
 
     <issue
@@ -263,19 +310,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-anydpi-v21\exo_controls_rewind.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_rewind.xml"
             line="15"
             column="1"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-hdpi\exo_controls_rewind.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi/exo_controls_rewind.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xhdpi\exo_controls_rewind.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xhdpi/exo_controls_rewind.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xxhdpi\exo_controls_rewind.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi/exo_controls_rewind.png"/>
     </issue>
 
     <issue
@@ -286,23 +333,23 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-anydpi-v21\exo_controls_shuffle.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-anydpi-v21/exo_controls_shuffle.xml"
             line="15"
             column="1"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-hdpi\exo_controls_shuffle.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi/exo_controls_shuffle.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-ldpi\exo_controls_shuffle.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-ldpi/exo_controls_shuffle.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-mdpi\exo_controls_shuffle.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-mdpi/exo_controls_shuffle.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xhdpi\exo_controls_shuffle.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xhdpi/exo_controls_shuffle.png"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-xxhdpi\exo_controls_shuffle.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi/exo_controls_shuffle.png"/>
     </issue>
 
     <issue
@@ -313,11 +360,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\exo_error_bg.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/exo_error_bg.xml"
             line="2"
             column="1"/>
     </issue>
@@ -330,11 +377,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;merge xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;merge xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="2"
             column="1"/>
     </issue>
@@ -349,7 +396,7 @@
         explanation="Unused resources make applications larger and slow down builds."
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_black.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_black.png"/>
     </issue>
 
     <issue
@@ -360,11 +407,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_brightness_6_white_48px.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_brightness_6_white_48px.xml"
             line="1"
             column="1"/>
     </issue>
@@ -377,11 +424,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_exo_back.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_exo_back.xml"
             line="1"
             column="1"/>
     </issue>
@@ -394,11 +441,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_exo_pause.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_exo_pause.xml"
             line="1"
             column="1"/>
     </issue>
@@ -411,11 +458,45 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_exo_start.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_exo_start.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_fullscreen_exit_white` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_fullscreen_exit_white.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_fullscreen_white` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_fullscreen_white.xml"
             line="1"
             column="1"/>
     </issue>
@@ -428,11 +509,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_lock_closed.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_lock_closed.xml"
             line="1"
             column="1"/>
     </issue>
@@ -445,11 +526,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_lock_open.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_lock_open.xml"
             line="1"
             column="1"/>
     </issue>
@@ -462,11 +543,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_replay_.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_replay_.xml"
             line="1"
             column="1"/>
     </issue>
@@ -479,11 +560,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_sentiment_very_dissatisfied_white_48px.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_sentiment_very_dissatisfied_white_48px.xml"
             line="1"
             column="1"/>
     </issue>
@@ -496,11 +577,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector android:height=&quot;24dp&quot; android:viewportHeight=&quot;24.0&quot;"
+        errorLine1="&lt;vector android:height=&quot;24dp&quot; android:viewportHeight=&quot;24.0&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_volume_off_white_48px.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_volume_off_white_48px.xml"
             line="1"
             column="1"/>
     </issue>
@@ -513,11 +594,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;vector android:height=&quot;24dp&quot; android:viewportHeight=&quot;24.0&quot;"
+        errorLine1="&lt;vector android:height=&quot;24dp&quot; android:viewportHeight=&quot;24.0&quot;"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_volume_up_white_48px.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_volume_up_white_48px.xml"
             line="1"
             column="1"/>
     </issue>
@@ -530,11 +611,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\list_view_back.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/list_view_back.xml"
             line="2"
             column="1"/>
     </issue>
@@ -547,11 +628,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\seek_progress.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/seek_progress.xml"
             line="2"
             column="1"/>
     </issue>
@@ -564,11 +645,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\simple_video_dialog_progress.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/simple_video_dialog_progress.xml"
             line="2"
             column="1"/>
     </issue>
@@ -581,11 +662,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\simple_video_dialog_progress_bg.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/simple_video_dialog_progress_bg.xml"
             line="2"
             column="1"/>
     </issue>
@@ -598,19 +679,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_previous_description&quot;>Previous track&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_previous_description&quot;>Previous track&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="16"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="18"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="3"
             column="11"/>
     </issue>
@@ -623,19 +704,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_next_description&quot;>Next track&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_next_description&quot;>Next track&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="17"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="19"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="4"
             column="11"/>
     </issue>
@@ -648,19 +729,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_stop_description&quot;>Stop&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_stop_description&quot;>Stop&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="20"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="22"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="7"
             column="11"/>
     </issue>
@@ -673,19 +754,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_rewind_description&quot;>Rewind&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_rewind_description&quot;>Rewind&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="21"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="23"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="8"
             column="11"/>
     </issue>
@@ -698,19 +779,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_fastforward_description&quot;>Fast forward&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_fastforward_description&quot;>Fast forward&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="22"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="24"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="9"
             column="11"/>
     </issue>
@@ -723,19 +804,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_controls_shuffle_description&quot;>Shuffle&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_controls_shuffle_description&quot;>Shuffle&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="26"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="28"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="13"
             column="11"/>
     </issue>
@@ -748,19 +829,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;media_error&quot;>The current video type is not found, or the current type is not supported, depending on the full version&lt;/string>"
+        errorLine1="    &lt;string name=&quot;media_error&quot;>The current video type is not found, or the current type is not supported, depending on the full version&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="28"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="31"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="15"
             column="11"/>
     </issue>
@@ -773,19 +854,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_play_error_hint&quot;>Play exception, video address exception, or network unavailable&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_play_error_hint&quot;>Play exception, video address exception, or network unavailable&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="29"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="32"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="16"
             column="11"/>
     </issue>
@@ -798,19 +879,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_play_btn_hnt&quot;>Continue to play&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_play_btn_hnt&quot;>Continue to play&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="30"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="33"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="17"
             column="11"/>
     </issue>
@@ -823,19 +904,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;net_network_no_hint&quot;>Your current network is unavailable, please check your network&lt;/string>"
+        errorLine1="    &lt;string name=&quot;net_network_no_hint&quot;>Your current network is unavailable, please check your network&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="31"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="34"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="18"
             column="11"/>
     </issue>
@@ -848,19 +929,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_play_reminder&quot;>hint&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_play_reminder&quot;>hint&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="32"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="35"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="19"
             column="11"/>
     </issue>
@@ -873,19 +954,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;exo_play_wifi_hint_no&quot;>Your current network is not wifi, do you continue to watch&lt;/string>"
+        errorLine1="    &lt;string name=&quot;exo_play_wifi_hint_no&quot;>Your current network is not wifi, do you continue to watch&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="33"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="36"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="20"
             column="11"/>
     </issue>
@@ -898,19 +979,19 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;string name=&quot;hint_replay_list&quot;>replay&lt;/string>"
+        errorLine1="    &lt;string name=&quot;hint_replay_list&quot;>replay&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="34"
             column="13"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="37"
             column="11"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="21"
             column="11"/>
     </issue>
@@ -923,21 +1004,38 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;array name=&quot;exo_video_switch_text&quot;>"
+        errorLine1="    &lt;array name=&quot;exo_video_switch_text&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
             line="35"
             column="12"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-en\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-en/strings.xml"
             line="38"
             column="10"/>
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values-zh-rCN\strings.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values-zh-rCN/strings.xml"
             line="22"
             column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.exo_fenge` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;exo_fenge&quot;>/&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/strings.xml"
+            line="40"
+            column="13"/>
     </issue>
 
     <issue
@@ -948,11 +1046,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Previous&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Previous&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
             line="26"
             column="12"/>
     </issue>
@@ -965,11 +1063,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Next&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Next&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
             line="31"
             column="12"/>
     </issue>
@@ -982,11 +1080,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.FastForward&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.FastForward&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
             line="36"
             column="12"/>
     </issue>
@@ -999,11 +1097,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Rewind&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Rewind&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
             line="41"
             column="12"/>
     </issue>
@@ -1016,12 +1114,97 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Shuffle&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Shuffle&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
             line="56"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ExoMediaDuration` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ExoMediaDuration&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="91"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ExoMediaSpan` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ExoMediaSpan&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="100"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ExoMediaControllerBottom` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ExoMediaControllerBottom&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="112"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ExoMediaCurrPosition` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ExoMediaCurrPosition&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="121"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.style.ExoMediaTimeBar` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;style name=&quot;ExoMediaTimeBar&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="128"
             column="12"/>
     </issue>
 
@@ -1033,12 +1216,12 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Pause2&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Pause2&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
-            line="145"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="140"
             column="12"/>
     </issue>
 
@@ -1050,12 +1233,12 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;ExoMediaButton.Play2&quot;>"
+        errorLine1="    &lt;style name=&quot;ExoMediaButton.Play2&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
-            line="156"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="151"
             column="12"/>
     </issue>
 
@@ -1067,12 +1250,12 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;style name=&quot;MediaPreViewImage&quot;>"
+        errorLine1="    &lt;style name=&quot;MediaPreViewImage&quot;>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\values\styles.xml"
-            line="168"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/values/styles.xml"
+            line="163"
             column="12"/>
     </issue>
 
@@ -1084,11 +1267,11 @@
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2="^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\toggle_lock.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/toggle_lock.xml"
             line="2"
             column="1"/>
     </issue>
@@ -1101,10 +1284,10 @@
         priority="1"
         summary="Unused namespace"
         explanation="Unused namespace declarations take up space and require processing that is not necessary"
-        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine1="    &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
         errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="12"
             column="19"/>
     </issue>
@@ -1120,7 +1303,7 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\exo_bg_video_bottom.9.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/exo_bg_video_bottom.9.png"/>
     </issue>
 
     <issue
@@ -1134,7 +1317,7 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\exo_bg_video_top.9.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/exo_bg_video_top.9.png"/>
     </issue>
 
     <issue
@@ -1148,13 +1331,13 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable\ic_black.png"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable/ic_black.png"/>
     </issue>
 
     <issue
         id="IconDensities"
         severity="Warning"
-        message="Missing the following drawables in `drawable-mdpi`: exo_controls_fastforward.png, exo_controls_next.png, exo_controls_pause.png, exo_controls_play.png, exo_controls_previous.png... (4 more)"
+        message="Missing the following drawables in `drawable-hdpi`: ic_enter_fullscreen.png, ic_exit_fullscreen.png, ic_pause.png, ic_play.png"
         category="Usability:Icons"
         priority="4"
         summary="Icon densities validation"
@@ -1162,7 +1345,67 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\drawable-mdpi"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-mdpi`: exo_controls_fastforward.png, exo_controls_next.png, exo_controls_previous.png, exo_controls_repeat_all.png, exo_controls_repeat_off.png... (6 more)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-mdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xxhdpi`: ic_enter_fullscreen.png, ic_exit_fullscreen.png, ic_pause.png, ic_play.png"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        severity="Warning"
+        message="Avoid using sizes smaller than `12sp`: `11sp`"
+        category="Usability"
+        priority="4"
+        summary="Text size is too small"
+        explanation="Avoid using sizes smaller than 12sp."
+        errorLine1="            android:textSize=&quot;11sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="88"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        severity="Warning"
+        message="Avoid using sizes smaller than `12sp`: `11sp`"
+        category="Usability"
+        priority="4"
+        summary="Text size is too small"
+        explanation="Avoid using sizes smaller than 12sp."
+        errorLine1="            android:textSize=&quot;11sp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="100"
+            column="13"/>
     </issue>
 
     <issue
@@ -1173,12 +1416,28 @@
         priority="6"
         summary="Accessibility in Custom Views"
         explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
-        errorLine1="    this.playedAdGroups = playedAdGroups;"
-        errorLine2="         ~~~~~~~~~~~~">
+        errorLine1="  public boolean onTouchEvent(MotionEvent event) {"
+        errorLine2="                 ~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\java\com\google\android\exoplayer2\ui\DefaultTimeBar.java"
-            line="387"
-            column="10"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/java/com/google/android/exoplayer2/ui/DefaultTimeBar.java"
+            line="408"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="`onTouch` should call `View#performClick` when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="            public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                           ~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/java/com/google/android/exoplayer2/ui/PlaybackControlView.java"
+            line="402"
+            column="28"/>
     </issue>
 
     <issue
@@ -1189,12 +1448,12 @@
         priority="6"
         summary="Accessibility in Custom Views"
         explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
-        errorLine1="    public View getVideoSurfaceView() {"
-        errorLine2="                    ~~~~~~~~~~~~">
+        errorLine1="    public boolean onTouchEvent(MotionEvent ev) {"
+        errorLine2="                   ~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\java\com\google\android\exoplayer2\ui\SimpleExoPlayerView.java"
-            line="739"
-            column="21"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/java/com/google/android/exoplayer2/ui/SimpleExoPlayerView.java"
+            line="765"
+            column="20"/>
     </issue>
 
     <issue
@@ -1205,11 +1464,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="27"
             column="13"/>
     </issue>
@@ -1222,11 +1481,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="33"
             column="13"/>
     </issue>
@@ -1239,11 +1498,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="39"
             column="13"/>
     </issue>
@@ -1256,11 +1515,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="45"
             column="13"/>
     </issue>
@@ -1273,11 +1532,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="51"
             column="13"/>
     </issue>
@@ -1290,11 +1549,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="57"
             column="13"/>
     </issue>
@@ -1307,11 +1566,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="63"
             column="13"/>
     </issue>
@@ -1324,11 +1583,11 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="            &lt;ImageButton"
+        errorLine1="            &lt;ImageButton"
         errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\exo_playback_control_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/exo_playback_control_view.xml"
             line="69"
             column="13"/>
     </issue>
@@ -1341,13 +1600,13 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageButton"
-        errorLine2="        ^"
+        errorLine1="            &lt;ImageButton"
+        errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\simple_exo_playback_control_view.xml"
-            line="18"
-            column="9"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="27"
+            column="13"/>
     </issue>
 
     <issue
@@ -1358,13 +1617,157 @@
         priority="3"
         summary="Image without `contentDescription`"
         explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageButton"
-        errorLine2="        ^"
+        errorLine1="            &lt;ImageButton"
+        errorLine2="            ^"
         quickfix="studio">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\simple_exo_playback_control_view.xml"
-            line="22"
-            column="9"/>
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_toStartOf=&quot;@id/exo_video_fullscreen&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_toLeftOf=&quot;@id/exo_video_fullscreen&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="57"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_toStartOf=&quot;@id/exo_video_switch&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_toLeftOf=&quot;@id/exo_video_switch&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="67"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_toEndOf=&quot;@id/fl_start_pause_container&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_toRightOf=&quot;@id/fl_start_pause_container&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_alignStart=&quot;@id/exo_progress&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignLeft=&quot;@id/exo_progress&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_marginStart=&quot;6dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_marginLeft=&quot;6dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="85"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_alignEnd=&quot;@id/exo_progress&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_alignRight=&quot;@id/exo_progress&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="95"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_marginEnd=&quot;6dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_marginRight=&quot;6dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_playback_control_view.xml"
+            line="97"
+            column="13"/>
     </issue>
 
     <issue
@@ -1375,10 +1778,10 @@
         priority="5"
         summary="Using left/right instead of start/end attributes"
         explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
-        errorLine1="        android:layout_gravity=&quot;right|end&quot;"
+        errorLine1="        android:layout_gravity=&quot;right|end&quot;"
         errorLine2="                                ~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\simple_exo_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_view.xml"
             line="52"
             column="33"/>
     </issue>
@@ -1391,10 +1794,10 @@
         priority="5"
         summary="Using left/right instead of start/end attributes"
         explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
-        errorLine1="        android:layout_gravity=&quot;bottom|right&quot; />"
+        errorLine1="        android:layout_gravity=&quot;bottom|right&quot; />"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="E:\project\yjPlay\VideoUi\src\main\res\layout\simple_exo_view.xml"
+            file="/Users/ycy/workspace/yjPlay/VideoUi/src/main/res/layout/simple_exo_view.xml"
             line="62"
             column="33"/>
     </issue>

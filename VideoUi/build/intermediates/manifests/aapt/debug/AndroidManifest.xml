@@ -17,8 +17,8 @@
 <manifest
     package="com.google.android.exoplayer2.ui"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="16"
-    android:versionName="3.0" >
+    android:versionCode="20171229"
+    android:versionName="1.0.1" >
 
     <uses-sdk
         android:minSdkVersion="16"

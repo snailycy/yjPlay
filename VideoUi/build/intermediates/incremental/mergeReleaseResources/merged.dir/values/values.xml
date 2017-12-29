@@ -1464,8 +1464,8 @@
         <item name="android:contentDescription">@string/exo_controls_fastforward_description</item>
     </style>
     <style name="ExoMediaButton.Fullscreen">
-        <item name="android:layout_width">35dp</item>
-        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:background">@null</item>
         <item name="android:contentDescription">@null</item>
         <item name="android:scaleType">fitCenter</item>
@@ -1476,7 +1476,7 @@
         <item name="android:contentDescription">@string/exo_controls_next_description</item>
     </style>
     <style name="ExoMediaButton.Pause">
-        <item name="android:src">@drawable/exo_controls_pause</item>
+        <item name="android:src">@drawable/ic_pause</item>
         <item name="android:contentDescription">@string/exo_controls_pause_description</item>
     </style>
     <style name="ExoMediaButton.Pause2">
@@ -1490,7 +1490,7 @@
         <item name="android:contentDescription">@string/exo_controls_pause_description</item>
     </style>
     <style name="ExoMediaButton.Play">
-        <item name="android:src">@drawable/exo_controls_play</item>
+        <item name="android:src">@drawable/ic_play</item>
         <item name="android:contentDescription">@string/exo_controls_play_description</item>
     </style>
     <style name="ExoMediaButton.Play2">
@@ -1552,13 +1552,8 @@
     <style name="ExoMediaTextSwitch">
         <item name="android:id">@id/exo_video_switch</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0</item>
-        <item name="android:background">@null</item>
-        <item name="android:contentDescription">@null</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_marginLeft">-20dp</item>
         <item name="android:textColor">@color/exo_exo_video_switch_selector</item>
         <item name="android:visibility">gone</item>
     </style>

@@ -1,26 +1,50 @@
 [
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_media_action.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_media_action.xml"
     },
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/VideoUi/build/intermediates/res/merged/release/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/ycy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/29027e90b07bb658fa85cf465f70ace0/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_action.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/ycy/workspace/yjPlay/E:\\project\\yjPlay\\VideoUi\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "/Users/ycy/workspace/yjPlay/C:\\Users\\yangc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7217d8bac3a12a1791ad885126131b82\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     }
 ]
